@@ -1,5 +1,7 @@
 # Pega preço
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/horanerd/Pega-preco/blob/main/LICENSE)
+
 ### Sobre o projeto
 
 Pega preço é um sistema desenvolvido para extrair dos sites os preços de todos os produtos. 
