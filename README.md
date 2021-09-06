@@ -1,3 +1,17 @@
-# Pega-preco
+# Pega preço
+
+### Sobre o projeto
 
 Pega preço é um sistema desenvolvido para extrair dos sites os preços de todos os produtos. 
+
+Ultimizamos ás seguintes técnologia neste projeto:
+
+* Python
+* Ajax
+
+Versão do projeto 1.0 
+Neste versão estamos implementando a estrutura inicial do projeto na versão 1.2 iremos implementar algumas melhoria para usar inclusão com banco de dados.
+
+# Futuro do projeto
+
+Estamos desenvolvendo o projeto para servir de framework para retirar preço de qualquer site que for preciso, desta maneira só vai ser necessário indicar qual o site e qual o local dentro do site que deseja extrair os dados e será enviado via webapi para o banco de dados da sua escolha. Todas as paremitrações serão usadas diretas em um arquivo de configuração.
