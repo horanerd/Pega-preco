@@ -6,16 +6,15 @@ import json
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-navegador = webdriver.Chrome()
+
+navegador = webdriver.Chrome(executable_path=r'C:\Users\Guilherme\AppData\Local\Programs\Python\Python39\chromedriver.exe', options=chrome_options)
 
 
 #url = "https://www.terabyteshop.com.br/produto/19167/placa-de-video-colorful-geforce-rtx-3060-nb-duo-12gb-l-v-gddr6x-256bit-lhr212327118801"
 url = "https://www.terabyteshop.com.br/produto/18165/placa-de-video-biostar-geforce-gt-610-2gb-ddr3-64bit-vn6103thx6"
 navegador.get(url)
 
-time.sleep(1)
+time.sleep(10)
 
 
 element = navegador.find_element_by_xpath("//div[@class='info-det-prod']")
@@ -31,7 +30,7 @@ result_title = soup_title.find("h1", class_="tit-prod").string
 
 navegador.quit()
 
-print (result_title)
+print (soup)
 
 # Dump and Save to JSON file (Converter e salvar em um arquivo JSON)
 with open('preco.json', 'w', encoding='utf-8') as jp:
