@@ -3,9 +3,10 @@ import time
 from bs4 import BeautifulSoup
 import mysql.connector
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
-url = "https://www.kabum.com.br/hardware/placa-de-video-vga/amd-ati"
+#url = "https://www.kabum.com.br/hardware/placa-de-video-vga/amd-ati"
+url = "https://www.kabum.com.br/hardware/placa-de-video-vga/nvidia"
 
 
 

@@ -3,9 +3,10 @@ import time
 from bs4 import BeautifulSoup
 import mysql.connector
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
-url = "https://www.pichau.com.br/hardware/placa-de-video"
+#url = "https://www.pichau.com.br/hardware/placa-de-video?placadevideo=129"
+url = "https://www.pichau.com.br/hardware/placa-de-video?placadevideo=130"
 
 
 

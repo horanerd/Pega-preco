@@ -3,15 +3,14 @@ import time
 from bs4 import BeautifulSoup
 import mysql.connector
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
 #url = "https://www.terabyteshop.com.br"
-#url ="https://www.terabyteshop.com.br/hardware/placas-de-video/nvidia-geforce"
-url ="https://www.terabyteshop.com.br/hardware/placas-de-video/amd-radeon"
-
+url = "https://www.terabyteshop.com.br/hardware/placas-de-video/nvidia-geforce"
+#url = "https://www.terabyteshop.com.br/hardware/placas-de-video/amd-radeon"
 
 navegador.get(url)
-time.sleep(10)
+time.sleep(2)
 
 element = navegador.find_element_by_xpath("//body//div[@id='body']//div[@class='container']")
 html_content = element.get_attribute('outerHTML')
