@@ -6,7 +6,7 @@
 
 Pega preço é um sistema desenvolvido para extrair dos sites os preços de todos os produtos. 
 
-Ultimizamos ás seguintes técnologia neste projeto:
+Ultilizamos ás seguintes técnologia neste projeto:
 
 * Python
 * Ajax
